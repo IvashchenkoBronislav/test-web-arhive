@@ -1,0 +1,198 @@
+#header {
+    background-color: var(--jt-bg-header);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .3s;
+    min-height: 50px;
+    transition: all 3 ease;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.header-animate.header-hidden {
+    transform: translateY(-100%);
+    box-shadow: none !important;
+}
+
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#navbar 
+.menu-item {
+    position: relative;
+}
+
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.navbar>.container, 
+.navbar>.container-fluid, 
+.navbar>.container-lg, 
+.navbar>.container-md, 
+.navbar>.container-sm, 
+.navbar>.container-xl, 
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jt-icon {
+    display: inline-block;
+    height: 1em;
+    vertical-align: -0.15em;
+    width: 1em;
+    fill: var(--icon-color);
+    stroke: var(--icon-color);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+.i-facebook,.i-instagram>svg{
+    fill: var(--icon-color);
+}
+#dark-toggler .icon-mode:before {
+    content: url(../asset/img/night.svg);
+}
+
+.dark-mode #dark-toggler .icon-mode:before {
+    content: url(../asset/img/day.svg);
+}
+
+#navbar .navbar-nav > .menu-item > .nav-link {
+    font: normal bold 16px var(--bs-font-sans-serif);
+    line-height: 1.5;
+    color: var(--jt-nav-text);
+}
+#navbar .nav-link {
+    min-height: 40px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group>.form-control, 
+.input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+ .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-control, .form-control:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+.dropdown-menu, .accordion-item, .accordion-header {
+    background-color: var(--jt-bg-dropdown);
+    color: var(--jt-dropdown-text);
+    border-color: var(--jt-border-light);
+}
+
+
+
+
+@media (min-width: 992px) {
+    #navbar 
+    .navbar-nav > .menu-item {
+        display: flex;
+    }
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    #navbar .navbar-nav > .menu-item > .nav-link {
+        padding: 1.5rem 1rem;
+        white-space: nowrap;
+    }
+    #navbar .navbar-nav > .menu-item {
+        display: flex;
+    }
+
+}
