@@ -21,7 +21,8 @@
 
 #search-header .dropdown-menu {
     min-width: 300px;
-    transform: translate(-50%, 0);
+    right: 0;
+    transform: translate(-100%, 0);
     top: 100%;
 }
 input:checked ~ .d-block-check {
@@ -58,6 +59,14 @@ input:checked ~ .d-block-check {
 @media (min-width: 992px) {
     #sidebar {
         border-left: 1px solid;
+    }
+    
+    
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu{
+        transform: translate(0, 0) !important;
     }
 }
 

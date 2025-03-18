@@ -112,11 +112,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: var(--bs-gutter-y);
 }
 
-.jt-icon-center {
-    font-family: "Segoe UI", sans-serif;
-}
-
-
 
 .btn-sm {
     min-width: 32px;
@@ -264,9 +259,7 @@ a {
     font-size: .875rem;
     border-radius: .2rem;
 }
-.p-2 {
-    padding: .5rem !important;
-}
+
 label {
     cursor: pointer;
     margin-bottom: 0;
